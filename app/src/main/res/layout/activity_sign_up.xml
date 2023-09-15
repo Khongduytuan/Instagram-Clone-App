@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ui"
+    tools:context=".Activities.SignUpActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="160dp"
+        android:layout_height="90dp"
+        android:src="@drawable/instagram"
+        app:tint="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"/>
+    <EditText
+        android:id="@+id/full_name_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputs_background"
+        android:padding="10dp"
+        android:layout_below="@+id/logo"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="6dp"
+        android:hint="Full Name"
+        android:inputType="textEmailAddress"
+        />
+    <EditText
+        android:id="@+id/username_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputs_background"
+        android:padding="10dp"
+        android:layout_below="@+id/full_name_signup"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="6dp"
+        android:hint="Username"
+        android:inputType="textEmailAddress"
+        />
+
+    <EditText
+        android:id="@+id/email_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputs_background"
+        android:padding="10dp"
+        android:layout_below="@+id/username_signup"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="6dp"
+        android:hint="Email..."
+        android:inputType="textEmailAddress"
+        />
+
+    <EditText
+        android:id="@+id/password_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputs_background"
+        android:padding="10dp"
+        android:layout_below="@+id/email_signup"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="6dp"
+        android:hint="Password..."
+        android:inputType="textPassword"
+        />
+
+    <EditText
+        android:id="@+id/confirm_password_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputs_background"
+        android:padding="10dp"
+        android:layout_below="@+id/password_signup"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="6dp"
+        android:hint="Confirm Password..."
+        android:inputType="textPassword"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/sigup_btn"
+        android:layout_below="@id/confirm_password_signup"
+        android:layout_marginTop="6dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@color/white"
+        android:text="Register"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/signin_link_btn"
+        android:layout_marginTop="6dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@color/colorAccent"
+        android:text="Already Have An Account? Sign In"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+</RelativeLayout>
